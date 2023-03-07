@@ -104,11 +104,19 @@ void inserirElemento()
 // deve ser implementada como resposta ao exercicio
 void buscarElemento()
 {
-	int nBusca = 5;
+	int nBusca = 5, p = 0;
 	for (int i = 0; i <= nElementos; i++) {
 		
 		if (lista[i] == nBusca) {
-			cout << "Numero encontrado.";
+			cout << "Numero encontrado.\n";
+			p++;
 		}
+	}
+	if (p == 0) {
+		cout << "Numero não encontrado.\n";
+	}
+	else {
+		cout << "Numero foi encontrado "+p;
+		cout << "vezes.\n";
 	}
 }
